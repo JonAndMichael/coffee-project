@@ -55,15 +55,12 @@ var roastSelection = document.querySelector('#roast-selection');
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
-// roastSelection.addEventListener("click", function (){
-//     let value = roastSelection.value;
+roastSelection.addEventListener("change", updateCoffees);
+
+// let roast = document.getElementsByClassName("roast");
 //
-//     // console.log($( "#myselect option:selected" ).text());
-// })
-
-let roast = document.getElementsByClassName("roast");
-
-console.log(roast[0]);
-
-roast[0].addEventListener("click", updateCoffees);
-roast[1].addEventListener("click", updateCoffees);
+// console.log(roast[0].valueOf());
+// console.log(roast[1].valueOf());
+//
+// roast[0].addEventListener("click", updateCoffees);
+// roast[1].addEventListener("click", updateCoffees);
