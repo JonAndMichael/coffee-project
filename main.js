@@ -2,19 +2,30 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<div>';
-    html += '<h1>' + coffee.name + '</h1>';
-    html += '<p>' + coffee.roast + '</p>';
+    var html = '<div class="d-inline-block col-6 my-2">';
+    html += '<h1 class="d-inline-block">' + coffee.name + '</h1>';
+    html += '<p class="d-inline-block text-secondary fs-4 px-2">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
 }
 
+// function renderCoffees(coffees) {
+//     var html = '';
+//     for(var i =0; i < coffees.length; i++) {
+//         html += renderCoffee(coffees[i]);
+//     }
+//
+//
+//     return html;
+// }
+
 function renderCoffees(coffees) {
     var html = '';
-    for(var i =0; i < coffees.length; i++) {
-        html += renderCoffee(coffees[i]);
-    }
+    coffees.forEach(function (coffee, idx) {
+        console.log(localStorage.getItem("" + (idx +1)));
+    });
+
     return html;
 }
 
@@ -57,6 +68,13 @@ function addCoffee(e) {
     var filteredCoffees = [];
     coffees.forEach(function (coffee) { filteredCoffees.push(coffee); });
     tbody.innerHTML = renderCoffees(filteredCoffees);
+    localStorage.coffeeCount = coffees.length;
+    console.log(localStorage.coffeeCount);
+    coffees.forEach(function (coffee, idx) {
+        localStorage.setItem("" + (idx +1), coffee.name + " " + coffee.roast);
+    });
+
+
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
