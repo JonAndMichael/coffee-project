@@ -1,8 +1,18 @@
 #banner {
-    background-image: linear-gradient(saddlebrown, white);
+    background-image: linear-gradient(black, rgba(255,255,255,0));
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: saddlebrown !important;
     border: none !important;
+}
+
+body{
+    background-image: url("Coffee_Beans_Wooden_Background.jpeg");
+    background-size: 100%;
+
+}
+
+.white{
+    color: white;
 }
