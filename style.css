@@ -16,3 +16,7 @@ body{
 .white{
     color: white;
 }
+
+*{
+    font-family: 'Lusitana', serif;
+}

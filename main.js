@@ -34,7 +34,7 @@ function buildCoffees() {
 
 function renderCoffee(coffee) {
     var html = '<div class="d-inline-block col-6 my-2 text-center">';
-    html += '<h1 class="d-inline-block">' + coffee.name + '</h1>';
+    html += '<h2 class="d-inline-block"><i class="fa fa-coffee"></i> ' + coffee.name + '</h2>';
     html += '<p class="d-inline-block text-secondary fs-4 px-2">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
