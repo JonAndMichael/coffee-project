@@ -9,43 +9,50 @@
 </head>
 <body>
 <div class="text-center" id="banner">
-    <h1>Coffee!</h1>
+    <!--    <h1>Coffee!</h1>-->
+    <img src="coffee-logo.png" width="200" height="200">
 </div>
 <!--<hr>-->
-<div class="container">
+<div class="container p-5">
     <div class="row">
         <div class="col-6">
-        <div id="coffees"></div>
+            <div id="coffees"></div>
         </div>
         <div class="col-6">
-        <form>
-            <label class="w-100 fw-bold" for="roast-selection-search">Roast</label>
-            <select class="w-100 form-select my-1" id="roast-selection-search">
-                <option>all</option>
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <label class="w-100 fw-bold" for="search">Coffee Name</label>
-            <input class="w-100 form-control my-1" type="text" class="search" id="search">
-            <input id="submit-search" type="submit" class = "btn btn-primary w-100 my-1"/>
-        </form>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label class="w-100 fw-bold" for="roast-selection-search">Roast</label>
+                        <select class="w-100 form-select my-1" id="roast-selection-search">
+                            <option>all</option>
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <label class="w-100 fw-bold" for="search">Coffee Name</label>
+                        <input class="w-100 form-control my-1" type="text" class="search" id="search">
+                        <input id="submit-search" type="submit" class="btn btn-primary w-100 my-1"/>
+                    </form>
+                </div>
+            </div>
+            <hr>
 
-        <hr>
-
-        <h1>Add a Coffee</h1>
-
-        <form>
-            <label class="w-100 fw-bold" for="roast-selection-add">Roast</label>
-            <select class="w-100 form-select my-1" id="roast-selection-add">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <label class="w-100 fw-bold" for="name">Name</label>
-            <input class="w-100 form-control my-1" type="text" class="name" id="name">
-            <input id="submit-add" type="submit" class="btn btn-primary w-100 my-1"/>
-        </form>
+            <h1>Add a Coffee</h1>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label class="w-100 fw-bold" for="roast-selection-add">Roast</label>
+                        <select class="w-100 form-select my-1" id="roast-selection-add">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <label class="w-100 fw-bold" for="name">Name</label>
+                        <input class="w-100 form-control my-1" type="text" class="name" id="name">
+                        <input id="submit-add" type="submit" class="btn btn-primary w-100 my-1"/>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>

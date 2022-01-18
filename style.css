@@ -2,3 +2,7 @@
     background-image: linear-gradient(saddlebrown, white);
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: saddlebrown !important;
+    border: none !important;
+}
